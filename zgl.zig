@@ -1,8 +1,6 @@
 const std = @import("std");
 
-const c = @cImport({
-    @cInclude("epoxy/gl.h");
-});
+const c = @import("glad.zig");
 
 comptime {
     std.testing.refAllDecls(@This());
